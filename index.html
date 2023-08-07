@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>login</title>
+</head>
+<body>
+  <div class="login_input_wrap">
+    <form action="" id="login_frm" name="login_frm" class="login_frm" method="post"> 
+      <div class="login_tit_wrap">
+        <h1 class="login_title">
+          LOGIN
+        </h1>
+      </div>
+      <div class="tab_panel">
+        <div class="setting">
+          <span class="inChk">
+            <input type="checkbox" id="autologin" class="setting_inp" name="autologin">
+            <label for="autologin" class="setting_label">로그인 유지</label>
+          </span>
+          <span class="inChk">
+            <input type="checkbox" id="id_save" class="setting_inp" name="autologin">
+            <label for="id_save" class="setting_label">아이디 저장</label>
+          </span>
+          <span class="inpChkSwP ssl_login_box">
+            <input type="checkbox" id="ssl_login" title="보안접속" class="ssl_login_hide" checked="checked">
+            <label for="ssl_login" class="lbl label_type" id="ssl_login_label">보안</label>
+          </span>
+        </div>
+        <div class="login-form">
+          <div class="id-input-box">
+            <input type="text" id="id" name="id"class="txt_tool" value required placeholder="아이디를 적어주세요">
+            <label for="" id="id-label" class="id-label" for="id"></label>
+          </div>
+          <div class="pw-input-box">
+            <input type="password" id="password" name="password" class="txt_tool" value maxlength="32" required placeholder="비밀번호를 적어주세요">
+            <label for="password" id="password-label"></label>
+          </div>
+          <button type="submit" class="btn-login BtnType SizeML">로그인</button>
+        </div>
+        <div class="signup-forgotten">
+          <a href="#" id="a_join" class="sign_up">회원가입</a>
+          <a href="#" id="a_join" class="forgotten">아이디/비밀번호 찾기</a>
+        </div>
+        <div class="social_login_tit">
+          <p class="tit">소셜 계정으로 간편 로그인</p>
+        </div>
+        <div class="social_login">
+          <div class="login_naver">
+            <a href="#" class="sl_naver ga_data_layer">
+              <div class="naverImgWrap">
+                <img src="img/naver.jpeg" alt="naver" class="naverImg">
+              </div>
+            </a>
+          </div>
+          <div class="login_kakao">
+            <a href="#" class="sl_kakao ga_data_layer">
+              <div class="kakaoImgWrap">
+                <img src="img/kakao_icon.png" alt="kakao" class="kakaoImg">
+              </div>
+            </a>
+          </div>        
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
